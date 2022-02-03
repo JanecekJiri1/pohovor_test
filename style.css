@@ -25,29 +25,54 @@ table {
   border-spacing: 0px;
 }
 
-.table4 {
-  border: 1px solid black;
-}
-
 th {
   border: 1px solid black;
   background-color: gray;
+
   color: white;
+  font-weight: bold;
   width: 150px;
+}
+th:first-child {
+  width: 100px;
 }
 
 td {
   border: 1px solid black;
+  text-align: right;
+  padding-right: 10px;
   width: 150px;
+}
+td:first-child {
+  text-align: center;
+  width: 100px;
 }
 /* Last row of index.html */
 #totalSumOfParagraps {
   color: white;
   background-color: gray;
+  font-weight: bold;
 }
 
 button {
   height: 25px;
   padding: 0 10px;
-  margin: 20px 0;
+  margin: 25px;
+}
+
+#pagination button {
+  height: 25px;
+  padding: 0 10px;
+  margin: 2px;
+}
+
+#pagination {
+  margin: 10px auto;
+  text-align: center;
+
+  width: 400px;
+}
+
+#pagination button:active {
+  background-color: gray;
 }
